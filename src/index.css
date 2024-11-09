@@ -43,7 +43,7 @@ li {
 
 /* Estilos para botões */
 button {
-  background-color: #007bff;
+  background-color: #02244a;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -70,7 +70,7 @@ p {
   display: inline-block;
   margin-top: 20px;
   text-decoration: none;
-  background-color: #28a745;
+  background-color: #09541a;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -88,8 +88,8 @@ p {
   position: fixed;   
   top: 20px;         
   right: 20px;      
-  background-color: #28a745;
-  color: white;
+  background-color: #6ec069;
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -100,4 +100,11 @@ p {
 
 .cart-button:hover {
   background-color: #218838;  
+}
+
+.book-icon {
+  width: 100px; /* Ajuste o valor conforme necessário para reduzir o tamanho */
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
 }

@@ -15,16 +15,24 @@ const ProductList = ({ products }) => {
       <ul>
         {products.map(product => (
           <li key={product.id}>
+           
             <h3>{product.name}</h3>
+            
+              <img 
+                src="/imagens/book_icon-icons.png" 
+                alt = "imagem do livro"
+                className="book-icon" 
+              />
+              
+            
             <p>Valor: {product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
-            <button onClick={() => addToCart(product)}>+ Ao Carrinho</button>
+            <button tabindex="0" onClick={() => addToCart(product)}>+ Ao Carrinho</button>
           </li>
         ))}
       </ul>
 
-      {/* Adicionando o botão para ir ao carrinho, agora com a classe "cart-button" para o estilo fixo (depois tentar colocar esse botão no canto superior) */}
       <Link to="/cart">
-        <button className="cart-button">Meu Carrinho</button>
+        <button  tabindex="0" className="cart-button">Meu Carrinho</button>
       </Link>
     </div>
   );
